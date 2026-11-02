@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Customer Support Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">AI</div>
+
+            <div>
+                <h1>Customer Support Assistant</h1>
+                <p>AI-powered payment, refund and delivery verification</p>
+            </div>
+        </header>
+
+        <section class="welcome">
+            <h2>How can I help you today?</h2>
+
+            <p>
+                Enter a customer's query below.
+                The AI will identify the issue and verify it
+                against the available records.
+            </p>
+        </section>
+
+        <section class="query-section">
+
+            <label for="customerQuery">
+                Customer Query
+            </label>
+
+            <textarea
+                id="customerQuery"
+                placeholder="Example: I was charged twice for order ORD-8101..."
+            ></textarea>
+
+            <button id="submitBtn" onclick="submitQuery()">
+                Verify Customer Query
+            </button>
+
+            <p id="loading" class="loading hidden">
+                Processing query... Please wait.
+            </p>
+
+        </section>
+
+        <section id="resultSection" class="results hidden">
+
+            <h2>Support Result</h2>
+
+            <div class="status-card">
+
+                <p>Verification Status</p>
+
+                <h3 id="status">-</h3>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3>Customer Reply</h3>
+
+                <p id="reply"></p>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3>Verification Details</h3>
+
+                <p id="issue"></p>
+
+                <p id="orderId"></p>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3>Supporting Evidence</h3>
+
+                <pre id="evidence"></pre>
+
+            </div>
+
+        </section>
+
+        <footer>
+            AI Customer Support Assistant | FastAPI + Ollama
+        </footer>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>

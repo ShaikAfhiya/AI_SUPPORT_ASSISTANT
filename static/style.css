@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    background: #2563eb;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 7px;
+}
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.query-section,
+.result-card,
+.status-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: 2px solid #3b82f6;
+}
+
+button {
+    margin-top: 18px;
+    padding: 13px 22px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.loading {
+    margin-top: 15px;
+    color: #60a5fa;
+}
+
+.hidden {
+    display: none;
+}
+
+.results {
+    margin-top: 35px;
+}
+
+.results h2 {
+    margin-bottom: 20px;
+}
+
+.status-card p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.status-card h3 {
+    color: #38bdf8;
+}
+
+.result-card h3 {
+    margin-bottom: 15px;
+}
+
+.result-card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #cbd5e1;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    margin-top: 45px;
+    padding-bottom: 20px;
+}
